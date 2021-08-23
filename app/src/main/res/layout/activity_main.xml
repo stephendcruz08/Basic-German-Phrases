@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CECDC6C6"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="141dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="168dp"
+            android:layout_height="101dp"
+            android:background="#3AA63E"
+            android:onClick="audio"
+            android:tag="hallo"
+            android:text="Hello"
+            android:textSize="14sp"
+            app:backgroundTint="#FFC400"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="169dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="audio"
+            android:tag="bitte"
+            android:text="Please"
+            app:backgroundTint="#8A0B0B"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="169dp"
+            android:layout_height="108dp"
+            android:onClick="audio"
+            android:tag="entschuldigung"
+            android:text="Excuse Me"
+            app:backgroundTint="#00B0FF"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="169dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="audio"
+            android:tag="gutenmorgen"
+            android:text="Good Morning"
+            app:backgroundTint="#CC0F52"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="169dp"
+            android:layout_height="112dp"
+            android:onClick="audio"
+            android:tag="willkomen"
+            android:text="Welcome"
+            app:backgroundTint="#68CD13"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="169dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="audio"
+            android:tag="tchuss"
+            android:text="Bye"
+            app:backgroundTint="#9933AA"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="169dp"
+            android:layout_height="112dp"
+            android:onClick="audio"
+            android:tag="bisspater"
+            android:text="See You Later"
+            app:backgroundTint="#DA4111"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="169dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="audio"
+            android:tag="danke"
+            android:text="Thank You"
+            app:backgroundTint="#958080"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/titan_one"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="English To German "
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:fontFamily="@font/titan_one"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
